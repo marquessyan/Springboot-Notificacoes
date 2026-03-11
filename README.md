@@ -78,6 +78,26 @@ git clone https://github.com/marquessyan/Springboot-Notificacoes.git
 * `200 OK`: Notificação processada com sucesso.
 * `400 Bad Request`: Dados inválidos ou tipo de notificação não suportado.
 
+
+### Receber Histórico
+
+**Endpoint:** `GET /notifications/history`
+
+**Resposta:**
+
+```json
+[
+   {
+      "createdAt": "2026-03-11T14:01:03.689378",
+      "destination": "dev@exemplo.com",
+      "id": 1,
+      "message": "Sua conta foi ativada com sucesso!",
+      "type": "EMAIL"
+   }
+]
+
+```
+
 ---
 
 ## 📈 Evoluções Futuras
