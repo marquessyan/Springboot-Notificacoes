@@ -2,7 +2,9 @@ package com.dev.marquessyan.notificationservice.strategy;
 
 import com.dev.marquessyan.notificationservice.model.NotificationRequest;
 import com.dev.marquessyan.notificationservice.model.NotificationType;
+import org.springframework.stereotype.Component;
 
+@Component
 public class SmsNotificationStrategy implements NotificationStrategy{
     @Override
     public void send(NotificationRequest request) {
